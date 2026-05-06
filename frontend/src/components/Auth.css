@@ -1,0 +1,199 @@
+/* Authentication UI - 8-bit pixel style */
+.auth-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.auth-screen {
+  background: #2C3E50;
+  border: 4px solid #34495E;
+  border-radius: 0;
+  padding: 40px;
+  box-shadow: 
+    0 0 0 4px #1A252F,
+    0 0 0 8px #34495E,
+    8px 8px 0 8px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.auth-title {
+  font-family: 'Courier New', monospace;
+  font-size: 2em;
+  font-weight: bold;
+  color: #FFF;
+  text-shadow: 
+    2px 2px 0 #000,
+    4px 4px 0 rgba(0,0,0,0.5);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.auth-input {
+  background: #34495E;
+  border: 2px solid #2C3E50;
+  color: #FFF;
+  font-family: 'Courier New', monospace;
+  padding: 15px;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.auth-input:focus {
+  outline: none;
+  border-color: #3498DB;
+  box-shadow: 0 0 0 2px #2980B9;
+}
+
+.auth-input::placeholder {
+  color: #95A5A6;
+  text-transform: uppercase;
+}
+
+.auth-btn {
+  background: linear-gradient(180deg, #3498DB 0%, #2980B9 100%);
+  border: none;
+  border-bottom: 4px solid #21618C;
+  color: white;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  padding: 15px 20px;
+  position: relative;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.1s;
+  box-shadow: 0 4px 0 #21618C;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.auth-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 #21618C;
+}
+
+.auth-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #21618C;
+}
+
+.auth-btn.register {
+  background: linear-gradient(180deg, #27AE60 0%, #229954 100%);
+  border-bottom: 4px solid #1E8449;
+  box-shadow: 0 4px 0 #1E8449;
+}
+
+.auth-btn.register:hover {
+  box-shadow: 0 6px 0 #1E8449;
+}
+
+.auth-btn.register:active {
+  box-shadow: 0 2px 0 #1E8449;
+}
+
+.auth-error {
+  background: #E74C3C;
+  color: #FFF;
+  padding: 15px;
+  border: 2px solid #C0392B;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+  margin: 20px 0;
+  animation: error-pulse 1s infinite;
+}
+
+.auth-success {
+  background: #27AE60;
+  color: #FFF;
+  padding: 15px;
+  border: 2px solid #229954;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+  margin: 20px 0;
+  animation: success-pulse 1s infinite;
+}
+
+@keyframes error-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes success-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.9; }
+}
+
+.auth-switch {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Courier New', monospace;
+  color: #ECF0F1;
+}
+
+.auth-switch a {
+  color: #3498DB;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.auth-switch a:hover {
+  color: #2980B9;
+  text-decoration: underline;
+}
+
+.user-info {
+  background: #34495E;
+  border: 2px solid #2C3E50;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+  font-family: 'Courier New', monospace;
+  color: #ECF0F1;
+}
+
+.user-info h3 {
+  margin: 0 0 10px 0;
+  color: #3498DB;
+  text-transform: uppercase;
+}
+
+.logout-btn {
+  background: linear-gradient(180deg, #E74C3C 0%, #C0392B 100%);
+  border-bottom: 4px solid #A93226;
+  box-shadow: 0 4px 0 #A93226;
+}
+
+.logout-btn:hover {
+  box-shadow: 0 6px 0 #A93226;
+}
+
+.logout-btn:active {
+  box-shadow: 0 2px 0 #A93226;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .auth-container {
+    margin: 20px;
+    padding: 10px;
+  }
+  
+  .auth-screen {
+    padding: 20px;
+  }
+  
+  .auth-title {
+    font-size: 1.5em;
+  }
+}

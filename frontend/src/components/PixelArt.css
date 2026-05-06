@@ -1,0 +1,151 @@
+/* 8-bit Pixel Art Characters */
+.pixel-character {
+  width: 64px;
+  height: 64px;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* Cat Pixel Art */
+.cat-happy {
+  background: 
+    /* Row 1 */
+    linear-gradient(90deg, transparent 12.5%, #FFA500 12.5%, #FFA500 25%, transparent 25%, transparent 37.5%, #FFA500 37.5%, #FFA500 50%, transparent 50%, transparent 62.5%, #FFA500 62.5%, #FFA500 75%, transparent 75%),
+    /* Row 2 */
+    linear-gradient(90deg, #FFA500 12.5%, #FFA500 25%, #000 25%, #000 37.5%, #FFA500 37.5%, #FFA500 50%, #000 50%, #000 62.5%, #FFA500 62.5%, #FFA500 75%),
+    /* Row 3 */
+    linear-gradient(90deg, #FFA500 6.25%, #FFA500 93.75%),
+    /* Row 4 */
+    linear-gradient(90deg, #FFA500 6.25%, #000 12.5%, #FF69B4 12.5%, #FF69B4 25%, #000 25%, #000 31.25%, #FFA500 31.25%, #FFA500 68.75%, #000 68.75%, #000 75%, #FF69B4 75%, #FF69B4 87.5%, #000 87.5%, #FFA500 93.75%),
+    /* Row 5 */
+    linear-gradient(90deg, #FFA500 6.25%, #000 12.5%, #FFF 12.5%, #FFF 18.75%, #000 18.75%, #000 31.25%, #FFA500 31.25%, #FFA500 68.75%, #000 68.75%, #000 81.25%, #FFF 81.25%, #FFF 87.5%, #000 87.5%, #FFA500 93.75%),
+    /* Row 6 */
+    linear-gradient(90deg, #FFA500 12.5%, #000 18.75%, #000 25%, #000 31.25%, #FFA500 31.25%, #FFA500 68.75%, #000 68.75%, #000 75%, #000 81.25%, #FFA500 81.25%),
+    /* Row 7 */
+    linear-gradient(90deg, #FFA500 25%, #FFA500 75%),
+    /* Row 8 */
+    linear-gradient(90deg, transparent, transparent);
+  background-size: 100% 12.5%;
+  background-position: 0 0, 0 12.5%, 0 25%, 0 37.5%, 0 50%, 0 62.5%, 0 75%, 0 87.5%;
+  background-repeat: no-repeat;
+}
+
+/* Dog Pixel Art */
+.dog-happy {
+  background: 
+    /* Row 1 */
+    linear-gradient(90deg, transparent 25%, #8B4513 25%, #8B4513 37.5%, transparent 37.5%, transparent 50%, #8B4513 50%, #8B4513 62.5%, transparent 62.5%),
+    /* Row 2 */
+    linear-gradient(90deg, #8B4513 18.75%, #000 18.75%, #000 25%, #8B4513 25%, #8B4513 43.75%, #000 43.75%, #000 50%, #8B4513 50%, #8B4513 75%),
+    /* Row 3 */
+    linear-gradient(90deg, #8B4513 12.5%, #8B4513 87.5%),
+    /* Row 4 */
+    linear-gradient(90deg, #8B4513 12.5%, #000 18.75%, #FF69B4 18.75%, #FF69B4 31.25%, #000 31.25%, #000 43.75%, #8B4513 43.75%, #8B4513 56.25%, #000 56.25%, #000 68.75%, #8B4513 68.75%, #8B4513 87.5%),
+    /* Row 5 */
+    linear-gradient(90deg, #8B4513 12.5%, #000 18.75%, #000 31.25%, #8B4513 31.25%, #8B4513 56.25%, #000 56.25%, #000 75%, #8B4513 75%, #8B4513 87.5%),
+    /* Row 6 */
+    linear-gradient(90deg, #8B4513 18.75%, #000 25%, #000 31.25%, #8B4513 31.25%, #8B4513 68.75%, #000 68.75%, #000 75%, #8B4513 75%),
+    /* Row 7 */
+    linear-gradient(90deg, #8B4513 31.25%, #8B4513 68.75%),
+    /* Row 8 */
+    linear-gradient(90deg, transparent, transparent);
+  background-size: 100% 12.5%;
+  background-position: 0 0, 0 12.5%, 0 25%, 0 37.5%, 0 50%, 0 62.5%, 0 75%, 0 87.5%;
+  background-repeat: no-repeat;
+}
+
+/* Bird Pixel Art */
+.bird-happy {
+  background: 
+    /* Row 1 */
+    linear-gradient(90deg, transparent 37.5%, #FFD700 37.5%, #FFD700 62.5%, transparent 62.5%),
+    /* Row 2 */
+    linear-gradient(90deg, #FFD700 25%, #000 25%, #000 31.25%, #FFD700 31.25%, #FFD700 37.5%, #FF69B4 37.5%, #FF69B4 43.75%, #FFD700 43.75%, #FFD700 68.75%, #000 68.75%, #000 75%, #FFD700 75%),
+    /* Row 3 */
+    linear-gradient(90deg, #FFD700 18.75%, #FF69B4 18.75%, #FF69B4 25%, #FFD700 25%, #FFD700 75%, #000 75%, #000 81.25%, #FFD700 81.25%),
+    /* Row 4 */
+    linear-gradient(90deg, #FFD700 12.5%, #000 18.75%, #FFF 18.75%, #FFF 25%, #000 25%, #000 31.25%, #FFD700 31.25%, #FFD700 68.75%, #000 68.75%, #000 75%, #FFD700 75%),
+    /* Row 5 */
+    linear-gradient(90deg, #FFD700 12.5%, #FFA500 12.5%, #FFA500 18.75%, #FFD700 18.75%, #FFD700 81.25%, #FFA500 81.25%, #FFA500 87.5%, #FFD700 87.5%),
+    /* Row 6 */
+    linear-gradient(90deg, #FFD700 18.75%, #FFD700 25%, #FFD700 75%, #FFD700 81.25%),
+    /* Row 7 */
+    linear-gradient(90deg, #FFD700 31.25%, #FFD700 68.75%),
+    /* Row 8 */
+    linear-gradient(90deg, transparent, transparent);
+  background-size: 100% 12.5%;
+  background-position: 0 0, 0 12.5%, 0 25%, 0 37.5%, 0 50%, 0 62.5%, 0 75%, 0 87.5%;
+  background-repeat: no-repeat;
+}
+
+/* Bunny Pixel Art */
+.bunny-happy {
+  background: 
+    /* Row 1 */
+    linear-gradient(90deg, transparent 31.25%, #FFF 31.25%, #FFF 37.5%, transparent 37.5%, transparent 50%, #FFF 50%, #FFF 56.25%, transparent 56.25%),
+    /* Row 2 */
+    linear-gradient(90deg, #FFF 25%, #FFF 43.75%, #FF69B4 43.75%, #FF69B4 50%, #FFF 50%, #FFF 75%),
+    /* Row 3 */
+    linear-gradient(90deg, #FFF 18.75%, #FFF 81.25%),
+    /* Row 4 */
+    linear-gradient(90deg, #FFF 12.5%, #000 18.75%, #FF69B4 18.75%, #FF69B4 31.25%, #000 31.25%, #000 43.75%, #FFF 43.75%, #FFF 56.25%, #000 56.25%, #000 68.75%, #FFF 68.75%, #FFF 87.5%),
+    /* Row 5 */
+    linear-gradient(90deg, #FFF 12.5%, #000 18.75%, #000 31.25%, #FFF 31.25%, #FFF 68.75%, #000 68.75%, #000 81.25%, #FFF 81.25%),
+    /* Row 6 */
+    linear-gradient(90deg, #FFF 18.75%, #000 25%, #000 31.25%, #FFF 31.25%, #FFF 68.75%, #000 68.75%, #000 75%, #FFF 75%),
+    /* Row 7 */
+    linear-gradient(90deg, #FFF 31.25%, #FFF 68.75%),
+    /* Row 8 */
+    linear-gradient(90deg, transparent, transparent);
+  background-size: 100% 12.5%;
+  background-position: 0 0, 0 12.5%, 0 25%, 0 37.5%, 0 50%, 0 62.5%, 0 75%, 0 87.5%;
+  background-repeat: no-repeat;
+}
+
+/* Sad versions */
+.cat-sad, .dog-sad, .bird-sad, .bunny-sad {
+  filter: grayscale(50%);
+  transform: rotate(-5deg);
+}
+
+/* Dead versions */
+.cat-dead, .dog-dead, .bird-dead, .bunny-dead {
+  filter: grayscale(100%) brightness(0.5);
+  transform: rotate(90deg);
+}
+
+/* Pixel Art Animations */
+@keyframes pixel-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+@keyframes pixel-wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-2deg); }
+  75% { transform: rotate(2deg); }
+}
+
+@keyframes pixel-sleep {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(0.95); }
+}
+
+.pixel-character.happy {
+  animation: pixel-bounce 2s infinite;
+}
+
+.pixel-character.playing {
+  animation: pixel-wiggle 0.5s infinite;
+}
+
+.pixel-character.sleeping {
+  animation: pixel-sleep 3s infinite;
+}
+
+.pixel-character.eating {
+  animation: pixel-bounce 0.3s infinite;
+}

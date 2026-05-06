@@ -1,0 +1,450 @@
+/* 8-bit Pixel Art UI Theme */
+body {
+  background: linear-gradient(180deg, #4A90E2 0%, #7B68EE 50%, #FF6B9D 100%);
+  font-family: 'Courier New', monospace;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+.pixel-container {
+  background: #2C3E50;
+  border: 4px solid #34495E;
+  border-radius: 0;
+  box-shadow: 
+    0 0 0 4px #1A252F,
+    0 0 0 8px #34495E,
+    8px 8px 0 8px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+/* Pixelated buttons */
+.pixel-btn {
+  background: linear-gradient(180deg, #E74C3C 0%, #C0392B 100%);
+  border: none;
+  border-bottom: 4px solid #A93226;
+  color: white;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  padding: 12px 20px;
+  position: relative;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.1s;
+  box-shadow: 0 4px 0 #A93226;
+  margin: 4px;
+}
+
+.pixel-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 #A93226;
+}
+
+.pixel-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #A93226;
+}
+
+.pixel-btn.feed {
+  background: linear-gradient(180deg, #F39C12 0%, #D68910 100%);
+  border-bottom: 4px solid #B9770E;
+  box-shadow: 0 4px 0 #B9770E;
+}
+
+.pixel-btn.feed:hover {
+  box-shadow: 0 6px 0 #B9770E;
+}
+
+.pixel-btn.feed:active {
+  box-shadow: 0 2px 0 #B9770E;
+}
+
+.pixel-btn.play {
+  background: linear-gradient(180deg, #27AE60 0%, #229954 100%);
+  border-bottom: 4px solid #1E8449;
+  box-shadow: 0 4px 0 #1E8449;
+}
+
+.pixel-btn.play:hover {
+  box-shadow: 0 6px 0 #1E8449;
+}
+
+.pixel-btn.play:active {
+  box-shadow: 0 2px 0 #1E8449;
+}
+
+.pixel-btn.sleep {
+  background: linear-gradient(180deg, #8E44AD 0%, #7D3C98 100%);
+  border-bottom: 4px solid #6C3483;
+  box-shadow: 0 4px 0 #6C3483;
+}
+
+.pixel-btn.sleep:hover {
+  box-shadow: 0 6px 0 #6C3483;
+}
+
+.pixel-btn.sleep:active {
+  box-shadow: 0 2px 0 #6C3483;
+}
+
+.pixel-btn.clean {
+  background: linear-gradient(180deg, #3498DB 0%, #2980B9 100%);
+  border-bottom: 4px solid #21618C;
+  box-shadow: 0 4px 0 #21618C;
+}
+
+.pixel-btn.clean:hover {
+  box-shadow: 0 6px 0 #21618C;
+}
+
+.pixel-btn.clean:active {
+  box-shadow: 0 2px 0 #21618C;
+}
+
+/* Pixelated progress bars */
+.pixel-progress {
+  background: #1A252F;
+  border: 2px solid #34495E;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.pixel-progress-fill {
+  height: 100%;
+  background: repeating-linear-gradient(
+    90deg,
+    #27AE60,
+    #27AE60 4px,
+    #229954 4px,
+    #229954 8px
+  );
+  border-right: 2px solid #1E8449;
+  transition: width 0.3s;
+  image-rendering: pixelated;
+}
+
+.pixel-progress-fill.warning {
+  background: repeating-linear-gradient(
+    90deg,
+    #F39C12,
+    #F39C12 4px,
+    #D68910 4px,
+    #D68910 8px
+  );
+  border-right: 2px solid #B9770E;
+}
+
+.pixel-progress-fill.danger {
+  background: repeating-linear-gradient(
+    90deg,
+    #E74C3C,
+    #E74C3C 4px,
+    #C0392B 4px,
+    #C0392B 8px
+  );
+  border-right: 2px solid #A93226;
+}
+
+/* Pixelated text */
+.pixel-title {
+  font-family: 'Courier New', monospace;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #FFF;
+  text-shadow: 
+    2px 2px 0 #000,
+    4px 4px 0 rgba(0,0,0,0.5);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.pixel-subtitle {
+  font-family: 'Courier New', monospace;
+  font-size: 1.2em;
+  color: #ECF0F1;
+  text-shadow: 1px 1px 0 #000;
+  margin: 10px 0;
+}
+
+/* Pixelated stats display */
+.pixel-stats {
+  background: #34495E;
+  border: 2px solid #2C3E50;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.pixel-stat-item {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  padding: 10px;
+  background: #2C3E50;
+  border: 2px solid #1A252F;
+}
+
+.pixel-stat-label {
+  width: 120px;
+  font-weight: bold;
+  color: #ECF0F1;
+  font-size: 1.1em;
+  text-shadow: 1px 1px 0 #000;
+}
+
+.pixel-stat-value {
+  width: 50px;
+  text-align: right;
+  font-weight: bold;
+  color: #FFF;
+  font-size: 1.1em;
+  text-shadow: 1px 1px 0 #000;
+}
+
+/* Pixelated screen effect */
+.pixel-screen {
+  position: relative;
+  background: #000;
+  border: 8px solid #444;
+  border-radius: 0;
+  padding: 20px;
+  box-shadow: 
+    inset 0 0 20px rgba(0,0,0,0.8),
+    0 0 10px rgba(0,0,0,0.5);
+}
+
+.pixel-screen::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0,0,0,0.1),
+    rgba(0,0,0,0.1) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Pixelated character container */
+.pixel-character-container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+  background: linear-gradient(180deg, #87CEEB 0%, #98FB98 100%);
+  border: 4px solid #444;
+  margin: 20px 0;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Pixelated clouds background */
+.pixel-clouds {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.pixel-cloud {
+  position: absolute;
+  background: #FFF;
+  border-radius: 0;
+  opacity: 0.8;
+}
+
+.pixel-cloud::before,
+.pixel-cloud::after {
+  content: '';
+  position: absolute;
+  background: #FFF;
+  border-radius: 0;
+}
+
+.pixel-cloud1 {
+  width: 40px;
+  height: 16px;
+  top: 20%;
+  left: 20%;
+  animation: float-cloud 20s infinite;
+}
+
+.pixel-cloud1::before {
+  width: 24px;
+  height: 24px;
+  top: -8px;
+  left: 8px;
+}
+
+.pixel-cloud1::after {
+  width: 32px;
+  height: 16px;
+  top: 0;
+  right: 8px;
+}
+
+@keyframes float-cloud {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(30px); }
+}
+
+/* Pixelated stars */
+.pixel-stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.pixel-star {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #FFF;
+  animation: twinkle 2s infinite;
+}
+
+.pixel-star:nth-child(1) { top: 10%; left: 20%; animation-delay: 0s; }
+.pixel-star:nth-child(2) { top: 20%; left: 60%; animation-delay: 0.5s; }
+.pixel-star:nth-child(3) { top: 30%; left: 40%; animation-delay: 1s; }
+.pixel-star:nth-child(4) { top: 15%; left: 80%; animation-delay: 1.5s; }
+.pixel-star:nth-child(5) { top: 25%; left: 10%; animation-delay: 2s; }
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+/* Pixelated input fields */
+pixel-input {
+  background: #2C3E50;
+  border: 2px solid #34495E;
+  color: #FFF;
+  font-family: 'Courier New', monospace;
+  padding: 12px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+pixel-input:focus {
+  outline: none;
+  border-color: #3498DB;
+  box-shadow: 0 0 0 2px #2980B9;
+}
+
+/* Retro game over screen */
+.game-over-screen {
+  background: #000;
+  color: #FF0000;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+  padding: 40px;
+  border: 4px solid #FF0000;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0.5; }
+}
+
+/* Animal selection */
+.animal-selection {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.animal-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.pixel-btn.selected {
+  background: linear-gradient(180deg, #27AE60 0%, #229954 100%);
+  border-bottom: 4px solid #1E8449;
+  box-shadow: 0 4px 0 #1E8449;
+  transform: scale(1.05);
+}
+
+/* Name input styling */
+.name-input {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.pixel-input {
+  background: #2C3E50;
+  border: 2px solid #34495E;
+  color: #FFF;
+  font-family: 'Courier New', monospace;
+  padding: 12px;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 250px;
+}
+
+.pixel-input:focus {
+  outline: none;
+  border-color: #3498DB;
+  box-shadow: 0 0 0 2px #2980B9;
+}
+
+/* Actions container */
+.actions-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+/* Pet info styling */
+.pet-info {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.pet-info h2 {
+  margin: 10px 0;
+  font-size: 1.8em;
+}
+
+.pet-info p {
+  margin: 5px 0;
+  font-size: 1.1em;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .animal-options {
+    grid-template-columns: 1fr;
+  }
+  
+  .actions-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .pixel-character {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .pixel-title {
+    font-size: 1.8em;
+  }
+}
